@@ -1,0 +1,157 @@
+[
+    {
+        "Id": "Section",
+        "Title": "Home"
+    },
+    {
+        "Id": "Section",
+        "Title": "Sobre",
+        "Text": "Somos uma empresa que fornece soluções de tecnologia, transformando projetos em casos de sucesso.",
+        "Subsection": [
+            {
+                "Id": "Subsection",
+                "Title": "Missão",
+                "Text": "Tornarmos conhecidos pela qualidade e assertividade nas soluções geradas para nossos clientes e parceiros com foco em novas tecnologias, robustez e confiabilidade, gerando valor a todas as partes interessadas."
+            },
+            {
+                "Id": "Subsection",
+                "Title": "Valores",
+                "Subsection": [
+                    {
+                        "Id": "Pinsection",
+                        "Icon": "key",
+                        "Title": "Integridade",
+                        "Text": "Focamos em fazer a coisa certa e não a mais fácil."
+                    },
+                    {
+                        "Id": "Pinsection",
+                        "Icon": "heart",
+                        "Title": "Paixão",
+                        "Text": "Acreditamos que a paixão é a semente para a criatividade e o desenvolvimento das nossas soluções."
+                    },
+                    {
+                        "Id": "Pinsection",
+                        "Icon": "lightbulb",
+                        "Title": "Inovação",
+                        "Text": "Procuramos continuamente aumentar nosso conhecimento, fortalecendo e agregando o máximo de valor em cada parceria que formamos com nossos clientes."
+                    },
+                    {
+                        "Id": "Pinsection",
+                        "Icon": "rocket",
+                        "Title": "Assertividade",
+                        "Text": "Nossas soluções são elaboradas com um único propósito gerar valor para nossos clientes."
+                    },
+                    {
+                        "Id": "Pinsection",
+                        "Icon": "thumbs-up",
+                        "Title": "Transparência",
+                        "Text": "A ética e a transparência é base das nossas negociações e contratos entre todos os envolvidos."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Id": "Section",
+        "Title": "cGIS",
+        "Text": "O cGIS é uma plataforma espacial de integração de dados e serviços, que fornece uma visão clara e objetiva de todos os processos sistematizados de uma empresa. Transformando dados isolados em informações úteis para as tomadas de decisão.",
+        "Subsection": [
+            {
+                "Id": "Subsection",
+                "Title": "Ordem de Serviço",
+                "Text": "O cGIS Saneamento possui um serviço de integração com o software comercial que cadastra e georreferencia as novas ordens de serviço e atualiza o status das ordens de serviço já georreferenciadas.",
+                "Video": "https://www.youtube.com/watch?v=zR5ixgG2hC0"
+            },
+            {
+                "Id": "Subsection",
+                "Title": "Clientes",
+                "Text": "O cGIS Saneamento possui um serviço de integração com o software comercial que cadastra e georreferencia as novas ligações e atualiza os atributos alfanuméricos das ligações georreferenciadas.",
+                "Video": "https://www.youtube.com/watch?v=zR5ixgG2hC0"
+            },
+            {
+                "Id": "Subsection",
+                "Title": "Cadastro inteligente",
+                "Text": "Serviços de edição online para as camadas do mapa padrão como:\n\n•Trechos e nós de rede de água e esgoto\n•Logradouros, bairros e loteamento\n•Zonas de Pressão e Abastecimento",
+                "Video": "https://www.youtube.com/watch?v=zR5ixgG2hC0"
+            },
+            {
+                "Id": "Subsection",
+                "Title": "Equipes de campo",
+                "Text": "O cGIS Saneamento possui um serviço de integração com o software de OS online que atualiza a posição geográfica das equipes de campo no mapa.\n\nPossibilitando assim o controle da localização geográfica das equipes de campo.",
+                "Video": "https://www.youtube.com/watch?v=zR5ixgG2hC0a"
+            },
+            {
+                "Id": "Subsection",
+                "Title": "Cálculos",
+                "Text": "Serviço que permite obter dados de vazão micro medida de uma região considerando um índice de perdas.\n\n•Vazão média\n•Vazão máx. dia\n•Vazão máx. hora\n•Vazão percapta\n•Área/Poplação/Densidade",
+                "Video": "https://www.youtube.com/watch?v=zR5ixgG2hC0"
+            },
+            {
+                "Id": "Subsection",
+                "Title": "Ferramentas de seleção e consulta",
+                "Text": "Serviços que permitem a navegação, e, a realização de consultas simples e avançadas nas camadas do mapa padrão:\n\nFerramentas navegação:\n\n•Zoom para extensão total do mapa;\n•Zoom In/Out;\n•Zoom Anterior/Posterior;\n•Panorâmica;\n\nFerramentas de consulta:\n\n•Tabela de atributos;\n•Construtor de consultas avançadas;\n•Identificador;\n•Ferramentas de medida;",
+                "Video": "https://www.youtube.com/watch?v=zR5ixgG2hC0"
+            }
+        ]
+    },
+    {
+        "Id": "Section",
+        "Title": "Clientes",
+        "Text": "Alguns trabalhos desenvolvidos pela Céltica",
+        "Subsection": [
+            {
+                "Id": "Subsection",
+                "Title": "SAAE Itabirito",
+                "Subtitle": "cGIS Saneamento",
+                "Text": "Aplicação da plataforma cGIS a área de saneamento. Desenvolvendo uma estrutura de cadastro geográfico inteligente, serviços de integração com sistema legados de gestão, automação e aplicativos remotos, além de serviços para notificação aos clientes, cálculos hidráulicos e alertas configuráveis.",
+                "Image": ""
+            },
+            {
+                "Id": "Subsection",
+                "Title": "Copasa",
+                "Subtitle": "Portal de Geoprocessamento Coorporativo",
+                "Text": "A equipe da Céltica participou diretamenta da criação da solução coorporativa de geoprocessamento da Copasa, desenvolvendo as ferramentas tanto para a interface web, como para a interface desktop utilizando as tecnologias de ESRI (ArcGIS Server/Desktop), como também na criação de serviços de imtegração com os softwares legados da empresa, tais como SAP, SICOM e EPANET.",
+                "Image": ""
+            },
+            {
+                "Id": "Subsection",
+                "Title": "Anglo American",
+                "Subtitle": "cGIS Saneamento",
+                "Text": "Desenvolvimento de um aplicativo Android , para coleta de dados remota e posterior sincronização com a base de dados coorporativa.\nPara os instrumento abaixo:\n\n•Estação Climatológica / Fluviométrica / Hidrosedimentológica / Pluviométrica\n•Medidor de Nível Água / Nascente / Piezômetro\n•Poço / Ponto de Água / Ponto de Medição Móvel / Qualidade / Vertedouro",
+                "Image": ""
+            },
+            {
+                "Id": "Subsection",
+                "Title": "Encibra",
+                "Subtitle": "Sistema de suporte à criação de estudos hidráulicos",
+                "Text": "O projeto foi desenvolvido com o objetivo de criar ferramentas para suporte à criação de estudos hidráulicos, facilitar a identificação de anomalias, inconsistências e descontinuidades no cadastro de redes de água, além de auxiliar no processo de sincronização entre os estudos criados no geodatabase local, as simulações realizadas no EPANET e a base GIS coorporativa.",
+                "Image": ""
+            }
+        ]
+    },
+    {
+        "Id": "Section",
+        "Title": "Serviços",
+        "Text": "",
+        "Subsection": [
+            {
+                "Id": "Pinsection",
+                "Icon": "lightbulb",
+                "Title": "GIS",
+                "Text": "Consultoria e desenvolvimento de softwares baseados em localização geográfica e funcões espaciais."
+            },
+            {
+                "Id": "Pinsection",
+                "Icon": "lightbulb",
+                "Title": "MOBILE",
+                "Text": "Consultoria e desenvolvimento em tecnologias móveis: IOS / Android / Windows Phone."
+            },
+            {
+                "Id": "Pinsection",
+                "Icon": "lightbulb",
+                "Title": "SERIOUS GAME",
+                "Text": "Consultoria e desenvolvimento de jogos sérios utilizando tecnologias 3D."
+            }
+        ]
+    }
+]

@@ -9,9 +9,15 @@ module.exports = withMT({
   ],
   theme: {
     colors:{
-      'black-600': "#00000099"
+      'aqua': "#31C5C7"
     },
-    
+    extend: {
+      fontFamily: {
+        sans: ['"Maven Pro"', 'sans-serif'],
+      },
+      
+    },
+
   },
   plugins: [],
 });
