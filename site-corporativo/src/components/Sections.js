@@ -7,28 +7,28 @@ const clientes = [
     subtitle: "cGIS Saneamento",
     text:"Aplicação da plataforma cGIS a área de saneamento. Desenvolvendo uma estrutura de cadastro geográfico inteligente, serviços de integração com sistema legados de gestão, automação e aplicativos remotos, além de serviços para notificação aos clientes, cálculos hidráulicos e alertas configuráveis.",
     imagetitle: "/logo3-600x400.jpg",
-    image: ""
+    video: "zR5ixgG2hC0"
   },
   {
     title: "Copasa",
     subtitle: "Portal de Geoprocessamento Coorporativo",
     text:"A equipe da Céltica participou diretamenta da criação da solução coorporativa de geoprocessamento da Copasa, desenvolvendo as ferramentas tanto para a interface web, como para a interface desktop utilizando as tecnologias de ESRI (ArcGIS Server/Desktop), como também na criação de serviços de imtegração com os softwares legados da empresa, tais como SAP, SICOM e EPANET.",
     imagetitle: "/logo11-600x400.jpg",
-    image: ""
+    image: "/copagis2.jpg"
   },
   {
     title: "Anglo American",
     subtitle: "App para coleta remota de dados",
     text:"Desenvolvimento de um aplicativo Android , para coleta de dados remota e posterior sincronização com a base de dados coorporativa.\nPara os instrumento abaixo:\n\n•Estação Climatológica / Fluviométrica / Hidrosedimentológica / Pluviométrica\n•Medidor de Nível Água / Nascente / Piezômetro\n•Poço / Ponto de Água / Ponto de Medição Móvel / Qualidade / Vertedouro",
     imagetitle: "/logo2-600x400.jpg",
-    image: ""
+    image: "/siganglo2.jpg"
   },
   {
     title: "Encibra",
     subtitle: "Sistema de suporte à criação de estudos hidráulicos",
     text:"O projeto foi desenvolvido com o objetivo de criar ferramentas para suporte à criação de estudos hidráulicos, facilitar a identificação de anomalias, inconsistências e descontinuidades no cadastro de redes de água, além de auxiliar no processo de sincronização entre os estudos criados no geodatabase local, as simulações realizadas no EPANET e a base GIS coorporativa.",
     imagetitle: "/logo4-600x400.jpg",
-    image: ""
+    image: "/encribra01.jpg"
   }
 ];
 

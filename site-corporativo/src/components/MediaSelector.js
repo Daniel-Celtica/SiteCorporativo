@@ -94,8 +94,16 @@ const MediaSelector = ({ media }) => {
                                 className=" absolute top-8 right-8 fas fa-xmark text-4xl text-white" />
 
                             <div className="inline-flex flex-wrap justify-evenly w-full h-full ">
-                                <iframe className="lg:w-[640px] lg:h-[360px]"
-                                    src={`https://www.youtube.com/embed/${media[currentIndex].video}`} />
+
+                                {media[currentIndex].video && !media[currentIndex].image ? (
+                                    <iframe className="lg:w-[640px] lg:h-[360px]"
+                                        src={`https://www.youtube.com/embed/${media[currentIndex].video}`} />
+                                ) : (
+                                    <Image
+                                        width={640}
+                                        height={360}
+                                        src={media[currentIndex].image} />
+                                )}
 
                                 <div className="max-w-80">
 
