@@ -1,4 +1,4 @@
-import { Carousel } from "@material-tailwind/react";
+import { Carousel, ChevronLeftIcon, ChevronRightIcon } from "@material-tailwind/react";
 
 //customização
 const theme = {
@@ -25,7 +25,7 @@ const theme = {
                 </button>
             ),
             navigation: ({ setActiveIndex, activeIndex, length }) => (
-                <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+                <div className="absolute bottom-4 left-2/4 z-10 flex -translate-x-2/4 gap-2">
                     {new Array(length).fill("").map((_, i) => (
                         <span
                             key={i}

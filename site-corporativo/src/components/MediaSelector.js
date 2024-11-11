@@ -41,7 +41,7 @@ const MediaSelector = ({ media }) => {
     }
 
     return (
-        <div ref={mediaContainerRef} className={`relative -mx-16 lg:-mx-64 mt-10 ${expanded ? "pb-[520px]" : ""}`}>
+        <div ref={mediaContainerRef} className={`relative -mx-16 lg:-mx-64 mt-10 ${expanded ? "pb-[760px]" : ""}`}>
             <div className="relative overflow-visible">
                 {/* Container para os slides */}
                 <div
@@ -51,10 +51,11 @@ const MediaSelector = ({ media }) => {
                     }}
                 >
                     {media.map((item, index) => (
-                        <a className="relative" onClick={() => goToSlide(index)} >
+                        <a className="relative" key={item.imagetitle} onClick={() => goToSlide(index)} >
                             {/* image */}
                             <div className="h-48 w-80 flex justify-center items-center">
                                 <Image
+                                    alt={item.imagetitle}
                                     width={200}
                                     height={200}
                                     src={item.imagetitle} />

@@ -2,8 +2,37 @@ import { useEffect, useRef, useState } from 'react';
 import NavBar from '@/components/Navbar';
 import CustomCarousel from '@/components/Carousel';
 import Footer from '@/components/Footer';
-import topics from '@/api/topics.json'
 import Sections from '@/components/Sections';
+
+const topics = [
+  {
+    id: "home",
+    title: "Home",
+  },
+  {
+    id: "sobre",
+    title: "Sobre",
+    text: "Somos uma empresa que fornece soluções de tecnologia, transformando projetos em casos de sucesso."
+  },
+  {
+    id: "cgis",
+    title: "cGIS",
+    text: "O cGIS é uma plataforma espacial de integração de dados e serviços, que fornece uma visão clara e objetiva de todos os processos sistematizados de uma empresa. Transformando dados isolados em informações úteis para as tomadas de decisão."
+  },
+  {
+    id: "clientes",
+    title: "Clientes",
+    text: "Alguns trabalhos desenvolvidos pela Céltica",
+  },
+  {
+    id: "servicos",
+    title: "Serviços"
+  },
+  {
+    id: "contato",
+    title: "Contato"
+  }
+];
 
 
 const HomePage = () => {
@@ -29,10 +58,10 @@ const HomePage = () => {
 
       let currentTopic = "Home";
       for (let topic of topics) {
-        const section = sectionRefs.current[topic.Title];
+        const section = sectionRefs.current[topic.title];
         //define a section atual
         if (section && scrollPosition >= section.offsetTop - 180) {
-          currentTopic = topic.Title;
+          currentTopic = topic.title;
         }
       }
       setActiveTopic(currentTopic);
