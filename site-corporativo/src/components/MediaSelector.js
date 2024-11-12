@@ -41,7 +41,7 @@ const MediaSelector = ({ media }) => {
     }
 
     return (
-        <div ref={mediaContainerRef} className={`relative -mx-16 lg:-mx-64 mt-10 ${expanded ? "pb-[760px]" : ""}`}>
+        <div ref={mediaContainerRef} className={`relative -mx-8 lg:-mx-64 mt-10 ${expanded ? "pb-[760px]" : ""}`}>
             <div className="relative overflow-visible">
                 {/* Container para os slides */}
                 <div
