@@ -86,7 +86,7 @@ const Sections = ({ topics, isFloating, sectionRefs }) => (
       key={topic.title}
       id={topic.title}
       ref={(el) => (sectionRefs.current[topic.title] = el)}
-      className={`h-auto pt-16 px-16 lg:px-64 bg-white border-b-2`}
+      className={`h-auto pt-16 px-8 lg:px-64 bg-white border-b-2`}
     >
 
       <h2 className="text-4xl font-medium text-gray-800">{topic.title}</h2>

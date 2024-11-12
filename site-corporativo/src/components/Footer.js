@@ -40,7 +40,7 @@ const Footer = () => {
 
     return (
 
-        <footer className="bg-gray-800 text-white text-center bg-fixed bg-parallax bg-cover parallax-section px-16 lg:px-64 flex flex-col">
+        <footer className="bg-gray-800 text-white text-center bg-fixed bg-parallax bg-cover parallax-section px-8 lg:px-64 flex flex-col">
 
 
             <div className="inline-flex flex-row justify-between py-10  flex-wrap">
