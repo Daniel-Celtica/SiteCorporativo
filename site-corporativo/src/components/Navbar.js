@@ -10,7 +10,7 @@ const NavBar = ({ topics, activeTopic, isFloating, scrollToSection }) => {
             ${isFloating ? 'bg-white shadow-lg bg-opacity-100 ' : 'bg-transparent shadow-none bg-gradient-to-b from-black/60 to-transparent '}`
         }>
             <div className="p-0 m-0 flex justify-between">
-                <div className={`${isFloating ? 'flex justify-between items-center px-6 py-6' : 'p-[24px] w-[280px] h-[100px] bg-white shadow-lg custom-clip-path '} relative transition-all duration-300`}>
+                <div className={`${isFloating ?  'flex justify-between items-center px-6 py-6' : 'p-[24px] w-[280px] h-[100px] bg-white shadow-lg custom-clip-path '} relative transition-all duration-300`}>
                     <img src="logo.svg"></img>
                 </div>
 

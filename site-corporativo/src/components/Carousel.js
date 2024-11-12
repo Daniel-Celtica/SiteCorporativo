@@ -69,7 +69,7 @@ const theme = {
 //componente
 const CustomCarousel = ({ images }) => (
     <Carousel
-        className="overflow-hidden"
+        className="overflow-hidden h-auto 2xl:h-[800px]"
         autoplay
         autoplayDelay={7000}
         loop
