@@ -1,4 +1,5 @@
 import { Navbar } from "@material-tailwind/react";
+import Image from "next/image";
 import { useState } from "react";
 
 const NavBar = ({ topics, activeTopic, isFloating, scrollToSection }) => {
@@ -11,7 +12,7 @@ const NavBar = ({ topics, activeTopic, isFloating, scrollToSection }) => {
         }>
             <div className="p-0 m-0 flex justify-between">
                 <div className={`${isFloating ?  'flex justify-between items-center px-6 py-6' : 'p-[24px] w-[280px] h-[100px] bg-white shadow-lg custom-clip-path '} relative transition-all duration-300`}>
-                    <img src="logo.svg"></img>
+                    <Image src="/logo.svg" height={179} width={179} alt="logo celtica" />
                 </div>
 
                 <>

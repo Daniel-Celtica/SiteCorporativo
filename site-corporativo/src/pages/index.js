@@ -54,7 +54,7 @@ const HomePage = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       //define se é flutuante
-      setIsFloating(scrollPosition >= 300);
+      setIsFloating(scrollPosition >= 200);
 
       let currentTopic = "Home";
       for (let topic of topics) {
