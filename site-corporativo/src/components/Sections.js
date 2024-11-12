@@ -46,35 +46,35 @@ const cGis = [
     title: "Clientes",
     subtitle: "Clientes",
     text: "O cGIS Saneamento possui um serviço de integração com o software comercial que cadastra e georreferencia as novas ligações e atualiza os atributos alfanuméricos das ligações georreferenciadas.",
-    video: "Qpi-XC0W-i8",
+    video: "YZ84iQrbYjw",
     imagetitle: "/6.gif"
   },
   {
     title: "Cadastro inteligente",
     subtitle: "Cadastro inteligente",
     text: "Serviços de edição online para as camadas do mapa padrão como:\n\n•Trechos e nós de rede de água e esgoto\n•Logradouros, bairros e loteamento\n•Zonas de Pressão e Abastecimento",
-    video: "z1QtRbKq8Tw",
+    video: "V5era7zaVeE",
     imagetitle: "/3.gif"
   },
   {
     title: "Equipes de campo",
     subtitle: "Equipes de campo",
     text: "O cGIS Saneamento possui um serviço de integração com o software de OS online que atualiza a posição geográfica das equipes de campo no mapa.\n\nPossibilitando assim o controle da localização geográfica das equipes de campo.",
-    video: "gO9s8EB370Q",
+    video: "DcvvWjExea4",
     imagetitle: "/4.gif"
   },
   {
     title: "Cálculos",
     subtitle: "Cálculos",
     text: "Serviço que permite obter dados de vazão micro medida de uma região considerando um índice de perdas.\n\n•Vazão média\n•Vazão máx. dia\n•Vazão máx. hora\n•Vazão percapta\n•Área/Poplação/Densidade",
-    video: "bw2JRDy53wQ",
+    video: "mi_jiRI8kjo",
     imagetitle: "/1.gif"
   },
   {
     title: "Ferramentas de seleção e consulta",
     subtitle: "Ferramentas de seleção e consulta",
     text: "Serviços que permitem a navegação, e, a realização de consultas simples e avançadas nas camadas do mapa padrão:\n\nFerramentas navegação:\n\n•Zoom para extensão total do mapa;\n•Zoom In/Out;\n•Zoom Anterior/Posterior;\n•Panorâmica;\n\nFerramentas de consulta:\n\n•Tabela de atributos;\n•Construtor de consultas avançadas;\n•Identificador;\n•Ferramentas de medida",
-    video: "O2TbkEhpfBE",
+    video: "2CPUVqJhrGo",
     imagetitle: "/2.gif"
   }
 ];
