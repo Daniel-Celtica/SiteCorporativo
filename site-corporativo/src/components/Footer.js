@@ -49,19 +49,19 @@ const Footer = () => {
                         <Image src="/logo.svg" className="grayscale" height={179} width={179} alt="logo celtica" />
                     </div>
                     <div className="flex flex-row space-x-2">
-                        <a className="h-8 w-8 border-2 rounded-full flex justify-center items-center cursor-pointer">
+                        <a className="h-8 w-8 border-2 rounded-full flex justify-center items-center" href="https://www.youtube.com/@celticabr">
                             <i className="fab fa-youtube text-1xl text-white" />
                         </a>
 
-                        <a className="h-8 w-8 border-2 rounded-full flex justify-center items-center cursor-pointer">
+                        <a className="h-8 w-8 border-2 rounded-full flex justify-center items-center" href="https://www.facebook.com/celticabr/">
                             <i className="fab fa-facebook-f text-1xl text-white" />
                         </a>
 
-                        <a className="h-8 w-8 border-2 rounded-full flex justify-center items-center cursor-pointer">
+                        <a className="h-8 w-8 border-2 rounded-full flex justify-center items-center" href="https://br.linkedin.com/company/celticabr">
                             <i className="fab fa-linkedin-in text-1xl text-white" />
                         </a>
 
-                        <a className="h-8 w-8 border-2 rounded-full flex justify-center items-center cursor-pointer">
+                        <a className="h-8 w-8 border-2 rounded-full flex justify-center items-center" href="https://x.com/celtica">
                             <i className="fab fa-x-twitter text-1xl text-white" />
                         </a>
                     </div>
