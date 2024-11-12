@@ -46,7 +46,7 @@ const Footer = () => {
             <div className="inline-flex flex-row justify-between py-10  flex-wrap">
                 <div className=" flex flex-col space-y-8">
                     <div>
-                        <img className="grayscale" src="logo.svg" alt="logo celtica"></img>
+                        <Image src="/logo.svg" className="grayscale" height={179} width={179} alt="logo celtica" />
                     </div>
                     <div className="flex flex-row space-x-2">
                         <a className="h-8 w-8 border-2 rounded-full flex justify-center items-center cursor-pointer">

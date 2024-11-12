@@ -103,6 +103,7 @@ const MediaSelector = ({ media }) => {
                                     <Image
                                         width={640}
                                         height={360}
+                                        alt={`${media.subtitle}`}
                                         src={media[currentIndex].image} />
                                 )}
 

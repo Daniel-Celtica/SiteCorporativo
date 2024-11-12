@@ -1,4 +1,5 @@
 import { Carousel, ChevronLeftIcon, ChevronRightIcon } from "@material-tailwind/react";
+import Image from "next/image";
 
 //customização
 const theme = {
@@ -76,7 +77,8 @@ const CustomCarousel = ({ images }) => (
         navigation={theme.carousel.defaultProps.navigation}>
 
         {images.map((src, index) => (
-            <img src={src} key={index} alt={`Slide ${index + 1}`} />
+            // <img src={src} key={index} alt={`Slide ${index + 1}`} />
+            <Image src={`/${src}`} key={index} height={1903} width={1903} alt={`Slide ${index + 1}`} />
         ))}
 
     </Carousel>
