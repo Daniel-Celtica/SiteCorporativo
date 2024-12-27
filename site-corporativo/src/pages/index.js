@@ -3,6 +3,9 @@ import NavBar from '@/components/Navbar';
 import CustomCarousel from '@/components/Carousel';
 import Footer from '@/components/Footer';
 import Sections from '@/components/Sections';
+import { Button, Menu, MenuHandler, MenuItem, MenuList } from '@material-tailwind/react';
+import Options from '@/components/Options';
+import VLibras from 'vlibras-nextjs';
 
 const topics = [
   {
@@ -34,10 +37,29 @@ const topics = [
   }
 ];
 
+const carouselImages = [
+  {
+    img: "cgis-urb.png",
+    title: "cGis Urbanismo"
+  },
+  {
+    img: "cgis-celtica.png",
+    title: "cGis Saneamento"
+  },
+  {
+    img: "osonline.png",
+    title: "OS Online"
+  },
+  {
+    img: "app-saneamento.png",
+    title: "App Saneamento"
+  }
+];
 
 const HomePage = () => {
   const [activeTopic, setActiveTopic] = useState("Home");
   const [isFloating, setIsFloating] = useState(false);
+
   const sectionRefs = useRef({});
 
   const scrollToSection = (id) => {
@@ -73,13 +95,15 @@ const HomePage = () => {
     };
   }, []);
 
-  const carouselImages = ["office-celtica.png", "cgis-celtica.png"];
-
   return (
     <div>
-      
+
+      {process.env.NODE_ENV === "production" && <VLibras forceOnload />}
+
       {/* Barra de Navegação */}
       <NavBar topics={topics} activeTopic={activeTopic} isFloating={isFloating} scrollToSection={scrollToSection} />
+
+      <Options />
 
       {/* Seção do Carrossel */}
       <section id="Home" ref={(el) => (sectionRefs.current["Home"] = el)} className="flex h-auto w-full">

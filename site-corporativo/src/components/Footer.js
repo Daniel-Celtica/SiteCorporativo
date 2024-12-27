@@ -70,7 +70,7 @@ const Footer = () => {
                 </div>
 
                 <form className="flex flex-col space-y-4 w-96" onSubmit={handleSubmit}>
-                    <p className="flex mt-4 text-xl">Contate-nos</p>
+                    <p className="flex mt-4">Contate-nos</p>
                     <Input className={`${errors.email ? "text-red-500" : ""}`} label="Nome *" color="white" icon={<i className="fas fa-user text-white" />} name="nome" value={formData.nome} onChange={handleChange} error={!!errors.nome}/>
                     <Input className={`${errors.email ? "text-red-500" : ""}`} label="E-mail *" color="white" icon={<i className="fas fa-envelope text-white" />} name="email" value={formData.email} onChange={handleChange} error={!!errors.email}/>
                     <Input className={`${errors.email ? "text-red-500" : ""}`} label="Telefone *" color="white" icon={<i className="fas fa-phone text-white" />} name="telefone" value={formData.telefone} onChange={handleChange} error={!!errors.telefone}/>

@@ -7,7 +7,7 @@ const Contato = () => (
                 <i className={`fas fa-location-dot text-2xl text-white`} />
             </span>
 
-            <p className="ml-4 text-xl text-gray-800">Avenida Afonso Pena 3924, sala 1303/1304, Belo Horizonte, Minas Gerais</p>
+            <p className="ml-4 text-gray-800 dark:text-white">Avenida Afonso Pena 3924, sala 1303/1304, Belo Horizonte, Minas Gerais</p>
         </div>
 
         <div className="flex mt-8 items-center">
@@ -15,7 +15,7 @@ const Contato = () => (
                 <i className={`fas fa-phone text-2xl text-white`} />
             </span>
 
-            <p className="ml-4 text-xl text-gray-800">+55 31 3646-5733</p>
+            <p className="ml-4 text-gray-800 dark:text-white">+55 31 3646-5733</p>
         </div>
 
         <div className="flex mt-8 items-center">
@@ -23,7 +23,7 @@ const Contato = () => (
                 <i className={`fas fa-envelope text-2xl text-white`} />
             </span>
 
-            <p className="ml-4 text-xl text-gray-800">contato@celtica.com.br</p>
+            <p className="ml-4 text-gray-800 dark:text-white">contato@celtica.com.br</p>
         </div>
 
 

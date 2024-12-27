@@ -1,4 +1,4 @@
-import { Carousel, ChevronLeftIcon, ChevronRightIcon } from "@material-tailwind/react";
+import { Carousel, ChevronLeftIcon, ChevronRightIcon, Typography, Button } from "@material-tailwind/react";
 import Image from "next/image";
 
 //customização
@@ -66,22 +66,90 @@ const theme = {
     },
 };
 
-//componente
-const CustomCarousel = ({ images }) => (
-    <Carousel
-        className="overflow-hidden h-auto 2xl:h-[800px]"
-        autoplay
-        autoplayDelay={7000}
-        loop
-        transition={{ duration: 2 }}
-        navigation={theme.carousel.defaultProps.navigation}>
+// //componente
+// const CustomCarousel = ({ images }) => {
 
-        {images.map((src, index) => (
-            // <img src={src} key={index} alt={`Slide ${index + 1}`} />
-            <Image src={`/${src}`} key={index} height={1903} width={1903} alt={`Slide ${index + 1}`} />
-        ))}
+//     return (
 
-    </Carousel>
-);
+//         <Carousel
+//             className="overflow-hidden h-auto 2xl:h-[800px]"
+//             autoplay
+//             autoplayDelay={1000000}
+//             loop
+//             transition={{ duration: 2 }}
+//             navigation={theme.carousel.defaultProps.navigation}>
 
-export default CustomCarousel;
+//             {images.map((src, index) => (
+//                 // <img src={src} key={index} alt={`Slide ${index + 1}`} />
+//                 <div key={index}>
+
+//                     <Image src={`/${src.img}`} key={index} height={1903} width={1903} alt={`Slide ${index + 1}`} className="object-cover"/>
+
+//                     <div className="absolute bottom-10 right-20 z-50" key={index} >
+//                         <Typography variant="h1" className="text-white drop-shadow-lg" key={index} >{src.title}</Typography>
+//                     </div>
+
+//                 </div>
+
+//             ))}
+
+//         </Carousel>
+//     )
+
+// }
+
+// export default CustomCarousel;
+
+
+export default function CustomCarousel({ images }) {
+    return (
+        <Carousel className="overflow-hidden h-auto 2xl:h-[800px]"
+            autoplay
+            autoplayDelay={7000}
+            loop
+            transition={{ duration: 2 }}
+            navigation={theme.carousel.defaultProps.navigation}>
+
+
+            {images.map((src, index) => (
+                <div key={index} className="relative h-full w-full">
+                    <Image
+                        height={1903}
+                        width={1903}
+                        src={`/${src.img}`}
+                        alt="image 1"
+                    />
+
+                    <div className="absolute inset-0 grid h-full w-full bg-black/40">
+                        <div className="absolute -bottom-2 right-5 lg:bottom-2 lg:right-8 md:bottom-0 md:right-6">
+
+                            <h1 className="mb-4 text-white font-bold">{src.title}</h1>
+
+                            {/* <Typography
+                                variant="lead"
+                                color="white"
+                                className="mb-12 opacity-80"
+                            >
+                                It is not so much for its beauty that the forest makes a claim
+                                upon men&apos;s hearts, as for that subtle something, that quality
+                                of air that emanation from old trees, that so wonderfully changes
+                                and renews a weary spirit.
+                            </Typography> */}
+                            {/* <div className="flex justify-center gap-2">
+                                <Button size="lg" color="white">
+                                    Explore
+                                </Button>
+                                <Button size="lg" color="white" variant="text">
+                                    Gallery
+                                </Button>
+                            </div> */}
+                        </div>
+                    </div>
+                </div>
+
+
+            ))}
+
+        </Carousel>
+    )
+}

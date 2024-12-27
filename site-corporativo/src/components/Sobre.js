@@ -31,14 +31,14 @@ const valores = [
 const Sobre = () => (
     <div className="pb-32">
         <br />
-        <h2 className="text-3xl whitespace-pre-wrap font-medium text-gray-800">Missão</h2>
+        <h1 className="whitespace-pre-wrap font-medium text-gray-800 dark:text-white">Missão</h1>
         <br />
-        <p className="text-xl font-regular whitespace-pre-wrap text-gray-800">
+        <p className="font-regular whitespace-pre-wrap text-gray-800 dark:text-white">
             Tornarmos conhecidos pela qualidade e assertividade nas soluções geradas para nossos clientes e parceiros com foco em novas tecnologias, robustez e confiabilidade, gerando valor a todas as partes interessadas.
         </p>
 
         <br />
-        <h2 className="text-3xl whitespace-pre-wrap font-medium text-gray-800">Valores</h2>
+        <h1 className="whitespace-pre-wrap font-medium text-gray-800 dark:text-white">Valores</h1>
         <br />
         <div className="inline-flex flex-wrap justify-evenly">
            <Pin pins={valores}/>

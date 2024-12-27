@@ -11,16 +11,11 @@ const servicos = [
         title: 'MOBILE',
         text: 'Consultoria e desenvolvimento em tecnologias móveis: IOS / Android / Windows Phone.'
     },
-    {
-        icon: 'gamepad',
-        title: 'SERIOUS GAME',
-        text: 'Consultoria e desenvolvimento de jogos sérios utilizando tecnologias 3D.'
-    }
 ];
 
 const Servicos = () => (
 
-    <div className="inline-flex flex-wrap justify-evenly pb-72">
+    <div className="flex flex-wrap justify-evenly pb-72 max-w-full">
 
         <Pin pins={servicos}/>
 

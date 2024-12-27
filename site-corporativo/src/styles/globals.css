@@ -21,3 +21,53 @@ body {
 html, body {
     overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
 }
+
+:root {
+    --font-scale: 0;
+  }
+  
+  .font-size-scale--2 {
+    --font-scale: -2;
+  }
+  
+  .font-size-scale--1 {
+    --font-scale: -1;
+  }
+  
+  .font-size-scale-0 {
+    --font-scale: 0;
+  }
+  
+  .font-size-scale-1 {
+    --font-scale: 1;
+  }
+  
+  .font-size-scale-2 {
+    --font-scale: 2;
+  }
+  
+  .font-size-scale-3 {
+    --font-scale: 3;
+  }
+  
+  body {
+    font-size: calc(1rem + var(--font-scale) * 0.125rem);
+  }
+  
+  h1 {
+    font-size: calc(2.25rem + var(--font-scale) * 0.125rem);
+  }
+  
+  h2 {
+    font-size: calc(1.5rem + var(--font-scale) * 0.125rem);
+  }
+
+  h3{
+    font-size: calc(1.4rem + var(--font-scale) * 0.125rem);
+  }
+  
+  p {
+    font-size: calc(1.25rem + var(--font-scale) * 0.125rem);
+  }
+
+

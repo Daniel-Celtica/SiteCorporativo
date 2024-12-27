@@ -53,7 +53,7 @@ const MediaSelector = ({ media }) => {
                     {media.map((item, index) => (
                         <a className="relative" key={item.imagetitle} onClick={() => goToSlide(index)} >
                             {/* image */}
-                            <div className="h-48 w-80 flex justify-center items-center">
+                            <div className="h-48 w-80 flex justify-center items-center  overflow-y-hidden bg-white">
                                 <Image
                                     alt={item.imagetitle}
                                     width={200}
@@ -77,7 +77,7 @@ const MediaSelector = ({ media }) => {
                             }
 
                             {/* titulo */}
-                            <p className="text-white text-xl absolute bottom-4 left-4 z-40">{item.title}</p>
+                            <p className="text-white absolute bottom-4 left-4 z-40">{item.title}</p>
                             {
                                 currentIndex === index && expanded ? (
                                     <i className=" absolute -bottom-6 left-48  fas fa-sort-up text-4xl text-gray-900"></i>) :
@@ -109,9 +109,9 @@ const MediaSelector = ({ media }) => {
 
                                 <div className="max-w-80">
 
-                                    <h2 className="text-white text-3xl">{media[currentIndex].subtitle}</h2>
+                                    <h2 className="text-white">{media[currentIndex].subtitle}</h2>
                                     <br />
-                                    <p className="text-white text-1xl whitespace-pre-wrap">{media[currentIndex].text}</p>
+                                    <p className="text-white whitespace-pre-wrap">{media[currentIndex].text}</p>
                                 </div>
 
                             </div>

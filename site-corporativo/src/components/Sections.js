@@ -86,13 +86,13 @@ const Sections = ({ topics, isFloating, sectionRefs }) => (
       key={topic.title}
       id={topic.title}
       ref={(el) => (sectionRefs.current[topic.title] = el)}
-      className={`h-auto pt-16 px-8 lg:px-64 bg-white border-b-2`}
+      className={`h-auto pt-16 px-8 lg:px-64 bg-white dark:bg-gray-900 border-b-2 border-gray-300 dark:border-gray-800`}
     >
 
-      <h2 className="text-4xl font-medium text-gray-800">{topic.title}</h2>
+      <h1 className="font-medium text-gray-800 dark:text-white">{topic.title}</h1>
       <br />
       <div className="h-1 w-8 bg-aqua" />
-      <p className="mt-4 whitespace-pre-wrap text-xl font-regular text-gray-800">{topic.text}</p>
+      <p className="mt-4 whitespace-pre-wrap font-regular text-gray-800 dark:text-white">{topic.text}</p>
 
       {
         topic.title === "Sobre" ? (<Sobre />) :

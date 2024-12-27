@@ -8,10 +8,10 @@ const NavBar = ({ topics, activeTopic, isFloating, scrollToSection }) => {
 
     return (
         <Navbar className={`fixed top-0 left-0 z-50 p-0 m-0 min-w-full rounded-none border-none backdrop-saturate-100 backdrop-blur-none transition-all duration-300
-            ${isFloating ? 'bg-white shadow-lg bg-opacity-100 ' : 'bg-transparent shadow-none bg-gradient-to-b from-black/60 to-transparent '}`
+            ${isFloating ? 'bg-white dark:bg-gray-900 shadow-lg bg-opacity-100 ' : 'bg-transparent shadow-none bg-gradient-to-b from-black/60 to-transparent '}`
         }>
             <div className="p-0 m-0 flex justify-between">
-                <div className={`${isFloating ?  'flex justify-between items-center px-6 py-6' : 'p-[24px] w-[280px] h-[100px] bg-white shadow-lg custom-clip-path '} relative transition-all duration-300`}>
+                <div className={`${isFloating ?  'flex justify-between items-center px-6 py-6' : 'p-[24px] w-[280px] h-[100px] bg-white dark:bg-gray-900  shadow-lg custom-clip-path '} relative transition-all duration-300`}>
                     <Image src="/logo.svg" height={179} width={179} alt="logo celtica" />
                 </div>
 
@@ -19,7 +19,7 @@ const NavBar = ({ topics, activeTopic, isFloating, scrollToSection }) => {
                     {/* Menu para telas menores */}
                     <div className="lg:hidden relative">
                         <button
-                            className={`${isFloating ? 'text-gray-800' : 'text-white'}  p-6`}  
+                            className={`${isFloating ? 'text-gray-900 ' : 'text-white'} dark:text-white p-6`}  
                             onClick={() => setMenuOpen(!menuOpen)}
                         >
                             {/* Ícone de hambúrguer */}
@@ -37,7 +37,7 @@ const NavBar = ({ topics, activeTopic, isFloating, scrollToSection }) => {
                                             setMenuOpen(false);
                                         }}
                                     >
-                                        {topic.title}
+                                        <h2>{topic.title}</h2>
                                     </button>
                                 ))}
                             </div>
@@ -49,10 +49,10 @@ const NavBar = ({ topics, activeTopic, isFloating, scrollToSection }) => {
                         {topics.map((topic) => (
                             <button
                                 key={topic.title}
-                                className={`text-xl px-3 py-2 ${activeTopic === topic.title && !isFloating ? 'text-aqua' : activeTopic !== topic.title && !isFloating ? 'text-white' : activeTopic === topic.title && isFloating ? 'text-aqua' : 'text-gray-700'} hover:bg-black/20`}
+                                className={`text-xl px-3 py-2 ${activeTopic === topic.title && !isFloating ? 'text-aqua' : activeTopic !== topic.title && !isFloating ? 'text-white' : activeTopic === topic.title && isFloating ? 'text-aqua' : 'text-gray-700 dark:text-white '}  hover:bg-black/20`}
                                 onClick={() => scrollToSection(topic.title)}
                             >
-                                {topic.title}
+                                <h2>{topic.title}</h2>
                             </button>
                         ))}
                     </div>
