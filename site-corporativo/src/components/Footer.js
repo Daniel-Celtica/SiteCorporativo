@@ -8,35 +8,59 @@ const Footer = () => {
         email: "",
         telefone: "",
         mensagem: ""
-      });
-    
-      const [errors, setErrors] = useState({});
-    
-      const handleChange = (e) => {
+    });
+
+    const [errors, setErrors] = useState({});
+
+    const handleChange = (e) => {
         setFormData({
-          ...formData,
-          [e.target.name]: e.target.value,
+            ...formData,
+            [e.target.name]: e.target.value,
         });
-      };
-    
-      const handleSubmit = (e) => {
+    };
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-    
+
         // Validação dos campos obrigatórios
         const newErrors = {};
         if (!formData.nome) newErrors.nome = "O nome é obrigatório";
         if (!formData.email) newErrors.email = "O e-mail é obrigatório";
         if (!formData.telefone) newErrors.telefone = "O telefone é obrigatório";
         if (!formData.mensagem) newErrors.mensagem = "A mensagem é obrigatória";
-    
+
         setErrors(newErrors);
-    
+
         // Enviar formulário se não houver erros
         if (Object.keys(newErrors).length === 0) {
-          console.log("Formulário enviado com sucesso:", formData);
-          // Insira aqui a lógica para envio do formulário
+            alert("Email enviado com sucesso!");
+            // Insira aqui a lógica para envio do formulário
+
+            const response = await fetch('/api/sendEmail', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    to: 'daniel.lucas2299@gmail.com',
+                    subject: `Mensagem de ${formData.nome}`,
+                    text: `Nome: ${formData.nome}
+                           \nTelefone: ${formData.telefone}
+                           \nEmail: ${formData.email}
+                           \nMensagem: ${formData.mensagem}`,
+                }),
+            });
+
+            const result = await response.json();
+            if (result.success) {
+                alert('Email enviado com sucesso!');
+            } else {
+                alert('Erro ao enviar email.');
+            }
+
+        } else {
+
+            alert(newErrors)
         }
-      };
+    };
 
     return (
 
@@ -71,10 +95,10 @@ const Footer = () => {
 
                 <form className="flex flex-col space-y-4 w-96" onSubmit={handleSubmit}>
                     <p className="flex mt-4">Contate-nos</p>
-                    <Input className={`${errors.email ? "text-red-500" : ""}`} label="Nome *" color="white" icon={<i className="fas fa-user text-white" />} name="nome" value={formData.nome} onChange={handleChange} error={!!errors.nome}/>
-                    <Input className={`${errors.email ? "text-red-500" : ""}`} label="E-mail *" color="white" icon={<i className="fas fa-envelope text-white" />} name="email" value={formData.email} onChange={handleChange} error={!!errors.email}/>
-                    <Input className={`${errors.email ? "text-red-500" : ""}`} label="Telefone *" color="white" icon={<i className="fas fa-phone text-white" />} name="telefone" value={formData.telefone} onChange={handleChange} error={!!errors.telefone}/>
-                    <Textarea className={`${errors.email ? "text-red-500" : ""}`} label="Mensagem *" color="white" name="mensagem" value={formData.mensagem} onChange={handleChange} error={!!errors.mensagem} />
+                    <Input className={`${errors.nome ? "text-red-500" : ""}`} label="Nome *" color="white" icon={<i className="fas fa-user text-white" />} name="nome" value={formData.nome} onChange={handleChange} error={!!errors.nome} />
+                    <Input className={`${errors.email ? "text-red-500" : ""}`} label="E-mail *" color="white" icon={<i className="fas fa-envelope text-white" />} name="email" value={formData.email} onChange={handleChange} error={!!errors.email} />
+                    <Input className={`${errors.telefone ? "text-red-500" : ""}`} label="Telefone *" color="white" icon={<i className="fas fa-phone text-white" />} name="telefone" value={formData.telefone} onChange={handleChange} error={!!errors.telefone} />
+                    <Textarea className={`white ${errors.mensagem ? "text-red-500" : ""}`} color="white" label="Mensagem *" name="mensagem" value={formData.mensagem} onChange={handleChange} error={!!errors.mensagem} resize />
 
                     <Button type="submit" className="bg-white text-black font-medium">Enviar</Button>
                 </form>
