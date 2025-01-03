@@ -19,7 +19,7 @@ const NavBar = ({ topics, activeTopic, isFloating, scrollToSection }) => {
                     {/* Menu para telas menores */}
                     <div className="lg:hidden relative">
                         <button
-                            className={`${isFloating ? 'text-gray-900 ' : 'text-white'} dark:text-white pt-7 pb-5 p-6`}  
+                            className={`${isFloating ? 'text-gray-900 pt-7 pb-5 p-6' : 'text-white'} dark:text-white  p-6`}  
                             onClick={() => setMenuOpen(!menuOpen)}
                         >
                             {/* Ícone de hambúrguer */}
